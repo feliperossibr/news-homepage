@@ -1,3 +1,5 @@
+@import url(./header.css);
+
 *, 
 *::after, 
 *::before {
@@ -23,8 +25,13 @@ html,
 body,
 main {
   font-family: "Inter", sans-serif;
+  background-color: var(--off-white);
 }
 
 p {
   font-size: .9375rem;
+}
+
+.hidden {
+  display: none;
 }

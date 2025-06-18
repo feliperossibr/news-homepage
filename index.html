@@ -12,7 +12,38 @@
 
   <link rel="stylesheet" href="styles/global.css">
 </head>
-<body>
+  <body>
+    <main class="cards-wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="logo">
+            <img src="assets/icons/logo.svg" alt="Logo" />
+          </div>
 
-</body>
+          <!--  Botão Hamburguer  -->
+          <button class="menu-toggle" aria-label="Abrir menu" id="menu-toggle">
+           <img src="assets/icons/icon-menu.svg" alt="">
+          </button>
+
+          <div id="menu-overlay" class="menu-overlay hidden"></div>
+
+          <!--  Botão de fechar  -->
+          <button id="menu-close" class="menu-close hidden" aria-label="Fechar menu">
+            <img src="assets/icons/icon-menu-close.svg" alt="">
+          </button>
+          <!--  Menu  -->
+          <nav class="nav-menu" id="nav-menu">
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">New</a></li>
+              <li><a href="#">Popular</a></li>
+              <li><a href="#">Trending</a></li>
+              <li><a href="#">Categories</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+    </main>
+  <script src="script.js"></script>
+  </body>
 </html>
