@@ -1,0 +1,30 @@
+*, 
+*::after, 
+*::before {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: 0;
+}
+
+:root {
+  /*  Primary Colors  */
+--soft-orange: #e9ab53;
+--soft-red: #f15e50;
+
+  /*  Neutral Colors  */
+--off-white: #fffdfa;
+--grayish-blue: #c5c6ce;
+--dark-gray: #5d5f79;
+--dark-blue: #00001a;
+}
+
+html,
+body,
+main {
+  font-family: "Inter", sans-serif;
+}
+
+p {
+  font-size: .9375rem;
+}
