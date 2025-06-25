@@ -198,7 +198,7 @@ button:hover {
   display: flex;
   flex-direction: column;
   margin-inline: 1rem;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .cards-more {
@@ -207,7 +207,7 @@ button:hover {
 
   & > img {
     max-width: 8rem;
-    height: auto;
+    height: 9rem;
   }
 }
 
@@ -304,7 +304,10 @@ button:hover {
     margin: 0;
   }
 
-  #last-card{
-    margin-bottom: 0;
+  .more{
+    max-width: 1100px;
+    flex-direction: row;
+    margin: 0 auto;
+    padding: 2rem 1rem;
   }
 }
