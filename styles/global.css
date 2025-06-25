@@ -15,7 +15,7 @@
   /*  Neutral Colors  */
 --off-white: #fffdfa;
 --grayish-blue: #c5c6ce;
---dark-grayish-blue: #5d5f79;
+--dark-grayish-blue: #48495c;
 --very-dark-blue: #010130;
 }
 
@@ -25,6 +25,10 @@ body {
   background-color: var(--off-white);
   width: 100%;
   height: 100%;
+}
+
+a {
+  text-decoration: none;
 }
 
 .container {
@@ -77,7 +81,6 @@ body {
 }
 
 .nav-menu a {
-  text-decoration: none;
   color: var(--dark-grayish-blue);
   font-size: 1.2rem;
   font-weight: 600;
@@ -128,6 +131,7 @@ body {
   color: var(--soft-orange);
   font-size: 1.875rem;
   font-weight: 800;
+  margin-bottom: 2rem;
 }
 
 .heading {
@@ -137,8 +141,6 @@ body {
 }
 
 .info-container a {
-  text-decoration: none;
-  
   transition: color .2s ease-in-out;
 }
 
@@ -164,7 +166,7 @@ body {
 }
 
 .second {
-  color: var(--grayish-blue);
+  color: var(--dark-grayish-blue);
   line-height: 1.6;
   font-size: .975rem;
 }
@@ -190,6 +192,49 @@ button:hover {
 
 .hidden {
   display: none;
+}
+
+.more {
+  display: flex;
+  flex-direction: column;
+  margin-inline: 1rem;
+  gap: 2rem;
+}
+
+.cards-more {
+  display: flex;
+  gap: 1.5rem;
+
+  & > img {
+    max-width: 8rem;
+    height: auto;
+  }
+}
+
+.more-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  & > span {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--soft-red);
+  }
+
+  & > a {
+    font-weight: 800;
+    color: var(--very-dark-blue);
+    transition: color .3s ease-in-out;
+  }
+
+  a:hover{
+    color: var(--soft-red);
+  }
+}
+
+#last-card{
+  margin-bottom: 2rem;
 }
 
 @media (min-width: 732px) {
@@ -257,9 +302,9 @@ button:hover {
   .info-container {
     grid-area: info;
     margin: 0;
+  }
 
-    & > .new-heading {
-      margin-bottom: 2rem;
-    }
+  #last-card{
+    margin-bottom: 0;
   }
 }
